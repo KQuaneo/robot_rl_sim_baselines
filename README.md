@@ -2,6 +2,10 @@
 
 Reproducible MuJoCo reinforcement learning baselines for continuous robot control tasks, including PPO/SAC training, deterministic rollout evaluation, reward-curve visualization, and video recording.
 
+## Demo Preview
+
+![HalfCheetah SAC Demo](assets/halfcheetah_sac_demo.gif)
+
 ## Results
 
 Current local run used Gymnasium `0.29.1`, which provides MuJoCo `v4` environments. Commands that pass `v5` automatically fall back to the matching `v4` environment on this machine.
@@ -30,6 +34,10 @@ Current local run used Gymnasium `0.29.1`, which provides MuJoCo `v4` environmen
 
 ```text
 robot_rl_sim_baselines/
+├── configs/
+│   ├── reacher_ppo.yaml
+│   ├── reacher_sac.yaml
+│   └── halfcheetah_sac.yaml
 ├── scripts/
 │   ├── train.py
 │   ├── evaluate.py
@@ -150,13 +158,14 @@ python scripts/record_video.py \
 - `videos/HalfCheetah-v4_sac-episode-0.mp4`
 - `results/summary_results.csv`
 - `results/Reacher-v4_ppo_vs_sac_returns.png`
+- `assets/halfcheetah_sac_demo.gif`
 
 ## Failure Case Notes
 
 - `Reacher`: PPO converged to a stable reaching behavior but remained slightly worse than SAC in deterministic evaluation. Some episodes still miss the target by a small margin, which explains the negative return.
 - `HalfCheetah`: SAC learned forward locomotion, but evaluation variance remains high. A few deterministic seeds still show lower returns, suggesting gait stability could improve with longer training or standard per-step SAC updates.
 
-## Resume Bullets
+## Project Highlights
 
 - Built a reproducible robot control RL benchmark with Gymnasium MuJoCo and Stable-Baselines3, covering PPO/SAC training, checkpoint management, deterministic rollout evaluation, reward curve plotting, and video recording.
 - Trained and evaluated Reacher and HalfCheetah continuous-control policies, comparing PPO vs SAC on reaching and producing a locomotion demo with SAC; final local results include Reacher SAC mean return -4.255 and HalfCheetah SAC mean return 4547.988 over 10 deterministic episodes.

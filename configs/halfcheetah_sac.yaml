@@ -1,0 +1,10 @@
+algo: sac
+env: HalfCheetah-v5
+total_timesteps: 1000000
+seed: 0
+save_freq: 200000
+run_name_suffix: fast
+train_freq: 16
+gradient_steps: 1
+learning_starts: 1000
+notes: Gymnasium 0.29.1 falls back to HalfCheetah-v4 on this platform.

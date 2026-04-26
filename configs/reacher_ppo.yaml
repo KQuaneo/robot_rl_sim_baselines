@@ -1,0 +1,6 @@
+algo: ppo
+env: Reacher-v5
+total_timesteps: 300000
+seed: 0
+save_freq: 50000
+notes: Gymnasium 0.29.1 falls back to Reacher-v4 on this platform.
