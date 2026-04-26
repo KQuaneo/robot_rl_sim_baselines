@@ -1,0 +1,11 @@
+env,algorithm,episode,return,length
+HalfCheetah-v4,sac,0,5114.1992482535225,1000
+HalfCheetah-v4,sac,1,5224.114498510766,1000
+HalfCheetah-v4,sac,2,4981.571061896731,1000
+HalfCheetah-v4,sac,3,5156.020182852318,1000
+HalfCheetah-v4,sac,4,5314.74182657489,1000
+HalfCheetah-v4,sac,5,2783.6526341267145,1000
+HalfCheetah-v4,sac,6,5151.371118426216,1000
+HalfCheetah-v4,sac,7,5217.682191417828,1000
+HalfCheetah-v4,sac,8,1913.069036380741,1000
+HalfCheetah-v4,sac,9,4623.462722997776,1000

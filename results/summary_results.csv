@@ -1,0 +1,4 @@
+env,algorithm,timesteps,mean_return,std_return,notes
+Reacher-v4,PPO,301056,-5.426,2.328,robotic reaching baseline
+Reacher-v4,SAC,300000,-4.255,1.694,off-policy comparison fast config
+HalfCheetah-v4,SAC,1000000,4547.988,1131.251,locomotion demo fast config

@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+.mypy_cache/
+.pytest_cache/
+events.out.tfevents.*
+*.log
+checkpoints/**/*_steps.zip
+checkpoints/**/*_replay_buffer_*.pkl
+checkpoints/**/*.pkl
+results/**/SAC_*/
+results/**/PPO_*/
+results/Reacher-v4_sac_seed0/
